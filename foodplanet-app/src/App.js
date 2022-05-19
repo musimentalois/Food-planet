@@ -1,28 +1,21 @@
 import logo from '../src/images/logo.png'
 import './App.css';
-
+import Leftside from './components/left-side'
 function App() {
   return (
     <div className="App-header">
      
-      <header className='App-header'>
+      <header className='App-header flex'>
      
-        <div className='list1 h-screen bg-black w-96 text-white'>
+        <div className='list1 h-screen bg-black w-[35rem] text-white'>
            <div className='logo  pl-32'>
-           <div className='container ml-80 text-black  text-4xl'>
-        <h1>Over view</h1>
-        <div className='search '>
-        <input type='text' className='input bg-slate-100 text-2xl  float-right' placeholder='Search.....'/>
-        </div>
-        </div>
+          
 
       <img src={logo} className="App-logo w-44" alt="logo" />
       </div> 
         <div className='left ml-20 mt-4'>
         <div className='Icon1 bg-neutral-800 flex p-5 mt-8 mr-8'>
-          <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.25 6.25V8.75H18.75V6.25C18.75 4.87109 19.8711 3.75 21.25 3.75H22.5C22.5 1.67969 20.8203 0 18.75 0H6.25C4.17969 0 2.5 1.67969 2.5 3.75H3.75C5.12891 3.75 6.25 4.87109 6.25 6.25ZM22.5 5H21.25C20.5586 5 20 5.55859 20 6.25V10H5V6.25C5 5.55859 4.44141 5 3.75 5H2.5C1.12109 5 0 6.12109 0 7.5C0 8.42188 0.507812 9.21875 1.25 9.65234V14.375C1.25 14.7188 1.53125 15 1.875 15H4.375C4.71875 15 5 14.7188 5 14.375V13.75H20V14.375C20 14.7188 20.2812 15 20.625 15H23.125C23.4688 15 23.75 14.7188 23.75 14.375V9.65234C24.4922 9.21875 25 8.42188 25 7.5C25 6.12109 23.8789 5 22.5 5Z" fill="#A9A9A9"/>
-</svg>  <span className='overview ml-4'>Over view</span></div>
+     <span className='overview ml-4'>Over view</span></div>
 <div className='icon2 bg-neutral-800 flex p-5 mt-8 mr-8'>
             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M24.2552 13.2351H13.3503L20.6127 20.4975C20.8903 20.7751 21.3471 20.7976 21.6325 20.5288C23.4109 18.8532 24.6343 16.5945 24.9932 14.0554C25.0548 13.6207 24.694 13.2351 24.2552 13.2351V13.2351ZM23.5277 10.2572C23.149 4.76729 18.762 0.380338 13.2722 0.00166177C12.853 -0.0272904 12.5001 0.32611 12.5001 0.746147V11.0292H22.7836C23.2037 11.0292 23.5566 10.6763 23.5277 10.2572ZM10.2942 13.2351V2.33025C10.2942 1.89137 9.90865 1.53061 9.47436 1.59219C3.9978 2.36609 -0.188319 7.15056 0.00653426 12.8845C0.206902 18.7733 5.27721 23.6023 11.1688 23.5283C13.4849 23.4994 15.6251 22.753 17.3848 21.5049C17.7478 21.2475 17.7717 20.7131 17.4569 20.3983L10.2942 13.2351Z" fill="#FFFAFA"/>
@@ -46,6 +39,65 @@ function App() {
        </div>
        </div>
         </div> 
+        <div className='content bg-blue-100 w-[100rem] '>
+        <div className='container'>
+        <h1 className='over-view text-4xl font-bold'>Client</h1>
+        <div className='search'>
+        <input type='text' className='input bg-slate-100 text-black text-2xl!important' placeholder='Search.....'/>
+        </div>
+      
+        <div className='m-content bg-white w-[75rem] ml-4 mt-10 h-[85vh]'>
+          <div className='top-content ml-96 mt-10'>
+          <h1 className='new-client font-bold mt-8 text-2xl ml-8'>New client</h1>
+          <div className='add-client flex'>
+          <input type='text' className='client-input text-20xl border-b-2  mt-8' placeholder='Add new client'/>
+          <div className='icon mt-8 mr-4 bg-[orange] pt-px rounded-[5px] p-px px-1'>
+          <svg width="15" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.5696 7.46429H12.7955V1.35714C12.7955 0.607746 12.1214 0 11.2902 0H9.78482C8.95358 0 8.27946 0.607746 8.27946 1.35714V7.46429H1.50536C0.674118 7.46429 0 8.07203 0 8.82143V10.1786C0 10.928 0.674118 11.5357 1.50536 11.5357H8.27946V17.6429C8.27946 18.3923 8.95358 19 9.78482 19H11.2902C12.1214 19 12.7955 18.3923 12.7955 17.6429V11.5357H19.5696C20.4009 11.5357 21.075 10.928 21.075 10.1786V8.82143C21.075 8.07203 20.4009 7.46429 19.5696 7.46429Z" fill="white"/>
+</svg>
+</div>
+</div>
+        </div>
+        <div className='all-client flex '>
+          <div>
+        <h1 className='h-all-client font-bold ml-4 text-2xl'>All client</h1>
+        </div>
+        <div className='client ml-[55rem] flex '>
+          <div className='sort flex'>
+        <svg width="20" height="25" viewBox="0 0 35 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.4064 3.57143H20.7814C21.0715 3.57143 21.3496 3.47736 21.5548 3.30992C21.7599 3.14247 21.8751 2.91537 21.8751 2.67857V0.892857C21.8751 0.656057 21.7599 0.428955 21.5548 0.261512C21.3496 0.0940686 21.0715 0 20.7814 0H16.4064C16.1163 0 15.8381 0.0940686 15.633 0.261512C15.4279 0.428955 15.3127 0.656057 15.3127 0.892857V2.67857C15.3127 2.91537 15.4279 3.14247 15.633 3.30992C15.8381 3.47736 16.1163 3.57143 16.4064 3.57143ZM16.4064 10.7143H25.1563C25.4464 10.7143 25.7246 10.6202 25.9297 10.4528C26.1348 10.2853 26.2501 10.0582 26.2501 9.82143V8.03571C26.2501 7.79891 26.1348 7.57181 25.9297 7.40437C25.7246 7.23693 25.4464 7.14286 25.1563 7.14286H16.4064C16.1163 7.14286 15.8381 7.23693 15.633 7.40437C15.4279 7.57181 15.3127 7.79891 15.3127 8.03571V9.82143C15.3127 10.0582 15.4279 10.2853 15.633 10.4528C15.8381 10.6202 16.1163 10.7143 16.4064 10.7143ZM33.9063 21.4286H16.4064C16.1163 21.4286 15.8381 21.5226 15.633 21.6901C15.4279 21.8575 15.3127 22.0846 15.3127 22.3214V24.1071C15.3127 24.3439 15.4279 24.571 15.633 24.7385C15.8381 24.9059 16.1163 25 16.4064 25H33.9063C34.1963 25 34.4745 24.9059 34.6796 24.7385C34.8848 24.571 35 24.3439 35 24.1071V22.3214C35 22.0846 34.8848 21.8575 34.6796 21.6901C34.4745 21.5226 34.1963 21.4286 33.9063 21.4286ZM16.4064 17.8571H29.5313C29.8214 17.8571 30.0996 17.7631 30.3047 17.5956C30.5098 17.4282 30.625 17.2011 30.625 16.9643V15.1786C30.625 14.9418 30.5098 14.7147 30.3047 14.5472C30.0996 14.3798 29.8214 14.2857 29.5313 14.2857H16.4064C16.1163 14.2857 15.8381 14.3798 15.633 14.5472C15.4279 14.7147 15.3127 14.9418 15.3127 15.1786V16.9643C15.3127 17.2011 15.4279 17.4282 15.633 17.5956C15.8381 17.7631 16.1163 17.8571 16.4064 17.8571ZM1.09404 7.14286H4.37527V24.1071C4.37527 24.3439 4.4905 24.571 4.69562 24.7385C4.90073 24.9059 5.17893 25 5.46901 25H7.65649C7.94657 25 8.22476 24.9059 8.42988 24.7385C8.63499 24.571 8.75023 24.3439 8.75023 24.1071V7.14286H12.0314C13.0028 7.14286 13.4936 6.1808 12.8046 5.61886L7.33588 0.261719C7.13079 0.094402 6.8527 0.000413827 6.56275 0.000413827C6.27279 0.000413827 5.9947 0.094402 5.78961 0.261719L0.320907 5.61886C-0.365415 6.17969 0.121983 7.14286 1.09404 7.14286Z" fill="#FF8C1A"/>
+</svg>
+
+        <span className='sort ml-4'>Sort</span>
+        </div>
+        <div className="filter flex ml-8">
+        <svg width="20" height="25" viewBox="0 0 30 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M27.8974 0H1.37366C0.154923 0 -0.46005 1.26299 0.403497 2.00054L10.9766 11.0323V21.0938C10.9766 21.4761 11.195 21.8345 11.5618 22.0538L16.1354 24.7872C17.0377 25.3267 18.2943 24.7799 18.2943 23.8271V11.0323L28.8676 2.00054C29.7294 1.26445 29.1186 0 27.8974 0Z" fill="#FF8C1A"/>
+</svg>
+
+        <span className='filter ml-4'>Filter</span>
+        </div>
+        </div>
+        </div>
+        <div className='content mt-20 '>
+       <ul className='client-list flex justify-between'>
+         <li className='client-details ml-10'>Client details</li>
+         <li className='sales ml-32'>Sales</li>
+         <li className='details-report ml-32 mr-4'>Details report</li>
+         <li className='category mr-10'>Category</li>
+       </ul>
+       <Leftside />
+       <Leftside />
+       <Leftside />
+       <Leftside />
+       <Leftside />
+       <Leftside />
+
+
+        </div>
+        </div>
+        </div>
+        </div>
     </header>
 
     </div>
